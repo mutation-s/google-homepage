@@ -5,20 +5,72 @@
     height: 100%;
    text-align: center;
 }
-
-.links-left {
-font-size: 14px;
-font-family: arial, sans-serif;
+.text-link {
 color: #222;
+text-decoration: none;
+}
+
+.text-link:hover {
+text-decoration-line: underline;
+}
+
+.left-link {
+    font-size: 14px;
+    font-family: Arial;
+    color: #222;
+}
+
+.right-link {
+    font-size: 13px;
+    font-family: Arial;
+    color: #0000de;
+}
+
+.links-top-container {
 display: grid;
-margin-left: 15px;
-grid-template-columns: 55px 55px;
+grid-template-columns: repeat(2, 55px) 4fr repeat(4, 55px);
 } 
+.about {
+grid-column: 1/2;
+}
+
+.store {
+grid-column: 2/3;
+}
+
+.gmail {
+grid-column: 4/5;
+}
+
+.images {
+grid-column: 5/6;
+}
+.apps-icon {
+grid-column: 6/7;
+}
+
+.profile {
+grid-column: 7/8;
+}
+.profile-shape {
+    border: 1px solid white;
+    border-radius: 50%;
+}
 
 .apps-icon-container {
+  margin-top: 12px;
+    margin-left:auto;
+  margin-right: 10px;
+    width: 50%;
+   height: 50%;
     display: grid;
     grid-template-columns: repeat(3, 6px);
     grid-template-rows: repeat(3, 6px);
+    align-items: center;
+}
+
+.apps-icon-container:hover {
+    background-color: thistle;
 }
 
 .app
@@ -28,10 +80,9 @@ grid-template-columns: 55px 55px;
     width: 2.2px;
     border: 1px solid #727272;
     border-radius: 50%; 
+    
 }
 
-.apps-icon-container:hover {
-    border: 1px solid #e4e4e4;
 }
 
 .links-right {
