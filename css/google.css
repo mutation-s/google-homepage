@@ -1,0 +1,42 @@
+
+.logo-div {
+    display: block;
+    width: 100%;
+    height: 100%;
+   text-align: center;
+}
+
+.links-left {
+font-size: 14px;
+font-family: arial, sans-serif;
+color: #222;
+display: grid;
+margin-left: 15px;
+grid-template-columns: 55px 55px;
+} 
+
+.apps-icon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 6px);
+    grid-template-rows: repeat(3, 6px);
+}
+
+.app
+    {
+    background-color: #727272;
+    height: 2.2px;
+    width: 2.2px;
+    border: 1px solid #727272;
+    border-radius: 50%; 
+}
+
+.apps-icon-container:hover {
+    border: 1px solid #e4e4e4;
+}
+
+.links-right {
+    display: grid;
+    grid-template-columns: 55px 55px 55px 55px;
+    margin-right: 2px;
+    margin-left: 500px;
+}
