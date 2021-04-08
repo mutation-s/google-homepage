@@ -1,143 +1,122 @@
 <!DOCTYPE html>
 <html lang="en"> 
 
-<head>
+    <head>
 
-    <meta charset="UTF-8" />
+        <meta charset="UTF-8"/>
 
+        <title> Google </title>
 
-    <title> Google </title>
+        <link rel="stylesheet" href="/css/google.css" type="text/css"/>
 
-<link rel="stylesheet" href="/css/google.css" type="text/css" />
+    </head>
 
-</head>
-
-<body>
-
-    <div class="google-homepage-container"> 
+    <body>
 
         <header> 
-            <div class="header">
-
-                <div class="links-top-container">
-                
-                    <div class="about left-link">
-                        <a class="text-link" href="#"> 
-                        <p>  About </p>
-                            </a>
-
-                    </div> 
-
-                    <div class="store left-link">
-                        <a class="text-link" href="#"> 
-                        <p> Store </p>
-                        </a>
-                    </div> 
-
-                    <div class="gmail right-link">
+            <nav id="top-links-container">
                     
-                        <a class="text-link" href="#"> 
+                <div id="about" class="top-left-link">
+                    <a class="text-link" href="https://about.google"> 
+                        <p>  About </p>
+                    </a>
+                </div> 
+
+                <div id="store" class="top-left-link">
+                    <a class="text-link" href="https://store.google.com/"> 
+                        <p> Store </p>
+                    </a>
+                </div> 
+
+                <div id="gmail" class="top-right-link">
+                    <a class="text-link" href="https://mail.google.com/mail/"> 
                         <p> Gmail </p>
-                        </a>
-
-                    </div>
-
-                    <div class="images right-link" > 
-                        <a class="text-link" href="#"> 
-                        <p> Images  </p>
-                        </a>
-
-                    </div>
-        
-                    <div class="apps-icon-container-parent">  
-                        <div class="apps-icon-container apps-icon"> 
-                            <div class="app"> </div>
-                            <div class="app"> </div>
-                            <div class="app"> </div>
-                            <div class="app"> </div>
-                            <div class="app"> </div>
-                            <div class="app"> </div>
-                            <div class="app"> </div>
-                            <div class="app"> </div>
-                            <div class="app"> </div>
-                        </div>
-                    </div>
-                
-                    <div class="profile">
-                        <img class="profile-shape" src="images/ben-profile-picture.gif" alt="ben"> 
-                    </div>
-            
+                    </a>
                 </div>
-            </div>
+
+                <div id="images" class="top-right-link" > 
+                    <a class="text-link" href="https://www.google.ca/imghp?hl=en&ogbl"> 
+                        <p> Images  </p>
+                    </a>
+                </div>
+            
+                        
+                <div id="apps-icon" class="apps-icon-container"> 
+                    <div class="app"> </div>
+                    <div class="app"> </div>
+                    <div class="app"> </div>
+                    <div class="app"> </div>
+                    <div class="app"> </div>        <!-- Creating the 9x9 "apps-icon" with grid -->
+                    <div class="app"> </div>
+                    <div class="app"> </div>
+                    <div class="app"> </div>
+                    <div class="app"> </div>
+                </div>
+                
+                    
+                <div  id="profile">
+                    <a href="https://github.com/mutation-s">
+                        <img id="profile-shape" src="images/ben-profile-picture.gif" alt="ben"> 
+                    </a>
+                </div>
+                
+            </nav>
 
         </header>
 
-        <content>
-            
-            <div class="content">
-                <div class="content-container">
-                    <div class="logo-div"> 
-                        <img class="google-logo" src="images/googlelogo_color_272x92dp.png" alt=" the google logo">
-                    </div>
-
-
-                        
-                           <div class="search"> 
-                                <div class="search-bar">
-                                    <img class="magnifier" src="/images/google-search.png"/>
-                                    <input class="search-field" type="text">
-                               
-                                <a href=""> 
-                                    <img class="microphone" src="/images/google-microphone.png"/> 
-                                </a>
-                                 </div>
-                            </div>
-                        
-
-                    <div class="buttons"> 
-                        <input class="submit" type="submit" value="Google Search">
-                        <input class="submit" type="submit" value="I'm Feeling Lucky"> 
-                    </div>
-                   
-                    <div class="language"> 
-                        <p> Google offered in: <a class="text-link-2" href=""> Français </a> </p>
-                    </div>
-
+        <main>
+                    
+            <form id="main-container">
+                
+                <div id="google-logo"> 
+                    <img src="images/googlelogo_color_272x92dp.png" alt=" the google logo">
+                </div>
+                            
+                <div id="search"> 
+                    <input id="search-field" type="text">
+                </div>
+                            
+                <div id="buttons"> 
+                    <input class="submit" type="submit" value="Google Search">
+                    <input class="submit" type="submit" value="I'm Feeling Lucky"> 
+                </div>
+                    
+                <div id="language"> 
+                    <p> Google offered in: <a class="francais text-link" href="https://www.google.com/setprefs?sig=0_1OjWs_x3q7vA9kBnOzM4LkUPKn8%3D&hl=fr&source=homepage&sa=X&ved=0ahUKEwia8ZWAr-_vAhVvGFkFHQgHAbAQ2ZgBCBA"> Français </a> </p>
                 </div>
 
-            </div>
+            </form>
 
-        </content>
+        </main>
 
         <footer>
-            <div class="footer"> 
-                <div class="bottom-content-container">
-                    <div class="region">    
-                        Canada
-                    </div>
-
-                    <div class="first-three bottom-links" >
-                        <ul>
-                            <li> <a href=""class="text-link bottom-link adverstising">Advertising</a> </li>
-                            <li><a href="" class="text-link bottom-link business">Business</a></li>
-                            <li><a href="" class="text-link bottom-link how-search-works">How Search works</a></li>
-                         </ul>
-                     </div>
+            
+            <nav class="bottom-content-container">
                 
-                   <div class="second-three bottom-links">
-                        <ul>
-                            <li><a href="" class="text-link bottom-link privacy">Privacy</a></li>
-                            <li><a href="" class="text-link bottom-link terms">Terms</a></li>
-                            <li><a href="" class="text-link bottom-link settings">Settings</a></li>
-                         </ul>
-                    </div>
-
+                <div id="region">    
+                    Canada
                 </div>
-            </div>
+
+                <div id="first-list" class="bottom-links" >
+                    <ul>
+                        <li> <a href="https://ads.google.com/"class="text-link bottom-links adverstising">Advertising</a> </li>
+                        <li><a href="https://smallbusiness.withgoogle.com/" class="text-link bottom-links business">Business</a></li>
+                        <li><a href="https://google.com/search/howsearchworks/" class="text-link bottom-links how-search-works">How Search works</a></li>
+                    </ul>
+                </div>
+                    
+                <div id="second-list" class="bottom-links">
+                    <ul>
+                        <li><a href="https://policies.google.com/privacy" id="privacy" class="text-link bottom-links">Privacy</a></li>
+                        <li><a href="https://policies.google.com/terms" id="terms" class="text-link bottom-links">Terms</a></li>
+                        <li><a href="" id="settings" class="text-link bottom-links">Settings</a></li>
+                        </ul>
+                </div>
+
+            </nav>
+            
         </footer>
 
-    </div>
-
-</body>
+    </body>
 
 </html>

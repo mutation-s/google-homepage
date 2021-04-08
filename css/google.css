@@ -1,205 +1,205 @@
-.google-homepage-container {
+
+/* 
+***********
+Top Nav Bar
+***********
+*/
+
+
+/*Grid */
+
+#top-links-container {
     display: grid;
-    grid-template-rows: 1fr 6fr 1fr;
-}
+    grid-template-columns: repeat(2, 55px) 4fr repeat(4, 55px);
+    height: 45px;
+    padding: 0px 0px 0px 26px;
     
-.header {
-    grid-row: 1/2;
+} 
+
+#about {
+    grid-column: 1/2;
+   
 }
-    
-.content {
-    grid-row: 2/3;
+
+#store {
+    grid-column: 2/3;
+    padding-left: 2px;
 }
-    
-.footer  {
-    grid-row: 3/4;
+
+#gmail {
+    grid-column: 4/5;
+    padding-left: 7px;
+    padding-top: 1px;
 }
-    
-.text-link {
-    color: #222;
+
+#images {
+    grid-column: 5/6;
+    padding-left: 1px;
+    padding-top: 1px;
+
+}
+
+#apps-icon {
+    grid-column: 6/7;
+    padding-left: 20px;
+    padding-top: 14px
+
+}
+ 
+#profile {
+    grid-column: 7/8;
+    padding-top: 2px;
+    padding-left: 1px;
+}
+
+/* Grid End */
+
+
+/*Styling & Alignment */ 
+
+.text-link {          /* also applies to footer links*/                 
+    color: #222;                          
     text-decoration: none;
 }
 
-.text-link:hover {
+.text-link:hover {    /* also applies to footer links*/  
     text-decoration-line: underline;
 }
 
-.text-link-2 {
-    text-decoration: none;
-}
-
-.text-link-2:hover {
-    text-decoration-line: underline;
-}
-
-.left-link {
+.top-left-link {
     font-size: 14px;
     font-family: Arial;
     color: #222;
 }
 
-.right-link {
+.top-right-link {
     font-size: 13px;
     font-family: Arial;
     color: #0e0e0f;
 }
 
-.links-top-container {
-    margin-left: 18px;
-    display: grid;
-    grid-template-columns: repeat(2, 55px) 4fr repeat(4, 55px);
-} 
-
-.about {
-    grid-column: 1/2;
-}
-
-.store {
-    position: relative;
-    left: 1.5px;
-    grid-column: 2/3;
-}
-
-.gmail {
-    position: relative; 
-    left: 15.5px;
-    top: 1px;
-    grid-column: 4/5;
-}
-
-.images {
-    position: relative;
-    left: 9.3px;
-    top: 1px;
-    grid-column: 5/6;
-}
-
-.apps-icon {
-    position: relative;
-    left: 9px;
-    top: 3px;
-    grid-column: 6/7;
-}
- 
-.profile {
-    position: relative;
-    left: 12px;
-    top: 2px;
-    grid-column: 7/8;
-
-}
-
-.profile-shape {
-    border: #fff 4px solid;
-    border-radius: 50%;
-}
-
-.profile-shape:hover {
-    border: #eee 4px solid;
-    border-radius: 50%;
-}
-
-.apps-icon-container {
-  position: relative;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  width: 30%;
-  height: 40%;
+.apps-icon-container {     /*Creating "apps-icon" with grid*/
   display: grid;
   grid-template-columns: repeat(3, 6px);
   grid-template-rows: repeat(3, 6px);
-  align-items: center;
-}
+  }
  
 .app  {
-    background-color: #727272;
-    height: 2.2px;
+    background-color: #727272;  /*Creating "apps-icon" with grid*/
+    height: 2.2px; 
     width: 2.2px;
     border: 1px solid #727272;
     border-radius: 50%;    
 }
 
-.links-right {
-    display: grid;
-    grid-template-columns: 55px 55px 55px 55px;
-    margin-right: 2px;
-    margin-left: 500px;
+#profile-shape {
+    border: #fff 4px solid;
+    border-radius: 50%;
 }
 
-
-.content-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+#profile-shape:hover {
+    border: #eee 4px solid;
+    border-radius: 50%;
 }
 
-.logo-div {
-    grid-column: 1/2;
+/*Styling & Alignment End */ 
+
+
+
+/* 
+***************
+Top Nav Bar End
+***************
+*/
+
+
+
+
+
+
+/*
+*****************
+Main Page Content
+*****************
+*/
+
+
+/*Grid */
+
+#main-container {
+    display: grid;
+    grid-template-rows: repeat(4 auto);
+    padding: 18vh 19px 0px 19px;
+
+}
+
+#google-logo {
    grid-row: 1/2;
-   text-align:center;
+   margin: 0px auto; 
+
 }
 
-
-.search {
-    grid-column: 1/2;
+#search {
     grid-row: 2/3;
+    margin: 20px auto 0px auto;
+    height: 50px;
+
+}
+#buttons {
+    grid-row: 3/4;
+    margin: 25px auto 0px auto;
+    height:40px;
 }
 
-.search-bar {
-    position: relative;
-    text-align: center;
-    margin:0 auto;
-    width: 584px;
-    height: 44px;
-    border: 1px solid #dfe1e5;
-    box-shadow: none;
-    border-radius: 24px;
-    top: 40px;
+#language {
+    grid-row: 4/5;
+    font-size: small;
+    font-family: arial;
+    margin: 12px auto 0px auto;
 }
 
-.search-field {
- position: relative;
+
+/*Grid End */
+
+
+/*Styling & Alignment*/
+
+#search-field {
+ border: 1px solid #dfe1e5;
+ box-shadow: none;
+ border-radius: 24px;
  margin: 0 auto;
- height: 30px;
- width: 400px;
- text-align: left;
- right: 48px;
- top: 2px;
+ height: 44px;
+ width: 580px;
  font-size: 16px;
  font-family: arial;
  color: #222;
- border: white;
+ text-indent: 8%;
  text-decoration: none;
+ background: url("/images/google-search.png") 1.4% 50% no-repeat, url("/images/google-microphone.png")  98% 44% no-repeat;
 }
 
-.search-bar:hover {
+#search-field:hover {
     background-color: #fff;
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
 }
 
-input:focus, textarea:focus, select:focus{
+@media (max-width: 628px) {
+     #search-field {
+           width: 91vw;
+        }
+    }
+
+input:focus, 
+select:focus {
     outline: none;
 }
 
-.magnifier {
-    position: relative;
-    right: 50px;
-    top: 10px;
-}
-
-.microphone {
+#microphone {
     position: relative;
     left: 47px;
     top: 8px;
-}
-.buttons {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-color: thistle;
-    text-align: center;
 }
 
 .submit{
@@ -209,7 +209,7 @@ input:focus, textarea:focus, select:focus{
     color: #3c4043;
     font-family: arial;
     font-size: 14px;
-    margin: 20px 4px;
+    margin:0px 4px;
     padding: 0 16px;
     line-height: 27px;
     height: 36px;
@@ -225,14 +225,69 @@ input:focus, textarea:focus, select:focus{
     color: #202124;
 }
 
-.language {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    text-align: center;
-    font-size: small;
-    font-family: arial;
-    background-color: wheat;
+.francais { 
+text-decoration: none;
+color: #1a0dab;
 }
+
+/*Styling & Alignment End*/
+
+
+/*
+*********************
+Main Page Content End
+*********************
+*/
+
+
+
+
+
+/* 
+**************
+Bottom Nav Bar
+**************
+*/
+
+
+/*Grid*/
+
+.bottom-content-container{
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#region {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #727272;
+    font-family: arial;
+    grid-row: 1/2; 
+    grid-column: 1/3;
+}
+
+#first-list {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    text-align: left;
+}
+
+#second-list {
+   grid-row: 2/3;
+   grid-column: 2/3;
+   text-align: right;
+}
+
+/*Grid End*/
+
+
+/*Styling & Alignment*/
 
 ul {
     list-style-type: none;
@@ -244,84 +299,58 @@ li {
     display: inline;
 }
 
-.bottom-content-container{
-    background-color: #eee;
-    margin-bottom: -10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-
-}
-
-
-.region {
-    padding: 15px 30px;
-    border-bottom: 1px solid #dadce0;
-    font-size: 15px;
-    color: #727272;
-    font-family: arial;
-    grid-row: 1/2; 
-    grid-column: 1/3;
-}
-
 .bottom-links {
     padding: 15px;
     font-size: 14px;
     font-family: arial;
+    color: #727272;
+
 }
 
-.bottom-link {
-color: #727272;
-margin: 12px;
-}
+/*Styling & Alignment End*/
 
-.first-three {
-grid-row: 2/3;
-grid-column: 1/2;
-text-align: left;
-}
 
-.second-three {
-grid-row: 2/3;
-grid-column: 2/3;
-text-align: right;
-}
+/*Resize/Responsive Alignment*/
 
 @media (max-width: 1200px) {
- .first-three {
-    text-align: center;
+ #first-list {
+ text-align: center;
  }
 }
 
 @media (max-width: 1200px) {
-    .second-three {
+    #second-list {
        text-align: center;
     }
 }
 
-
 @media (max-width: 650px) {
-    .bottom-content-container {
+    #bottom-content-container {
         grid-template-rows: 1fr 1fr 1fr;
     }
 }
 
 
 @media (max-width: 650px) {
-    .first-three {
+    #first-list {
         grid-column: 1/3
+}
 }
 
 @media (max-width: 650px) {
-    .second-three {
+    #second-list {
         grid-column: 1/3;
         grid-row: 3/4;
      }
 }
 
-@media (max-width: 650px) {
-    .bottom-content-container {
-     top: 74px;
-    }
-}
 
+/*Responsive Alignment End*/
+
+
+
+/* 
+******************
+Bottom Nav Bar End
+******************
+*/
