@@ -176,7 +176,7 @@ Main Page Content
  color: #222;
  text-indent: 8%;
  text-decoration: none;
- background: url("/images/google-search.png") 1.4% 50% no-repeat, url("/images/google-microphone.png")  98% 44% no-repeat;
+ background: url("google-search.png") 1.4% 50% no-repeat, url("google-microphone.png")  98% 44% no-repeat;
 }
 
 #search-field:hover {
